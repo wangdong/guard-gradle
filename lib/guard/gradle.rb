@@ -37,6 +37,7 @@ module Guard
     end
 
     def fire_command(command)
+      command = "#{command} -i" if @options[:gradle_info_log]
       UI.info "running #{command}"
       result = system command
       summary = result ? 'Success' : 'Failure'
