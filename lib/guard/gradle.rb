@@ -5,7 +5,7 @@ require 'guard/plugin'
 module Guard
   class Gradle < Plugin
 		
-    DEF_CMD = './gradlew test'
+    DEF_CMD = 'gradle test'
 
     @multi_projs = false
 
